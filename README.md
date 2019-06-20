@@ -17,8 +17,8 @@ python draw_attn.py -attn_path $attn_path -save_dir $save_dir -source_file $sour
 
 -attn_path是attn文件的路径
 
--source_file是源端句子文件夹的路径
+-source_file是源端句子文件的路径
 
--target_file是目标端句子文件夹的路径
+-target_file是目标端句子文件的路径
 
--save_dir是存储路径
+-save_dir是存储的文件夹路径
