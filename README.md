@@ -13,7 +13,7 @@ target_sentence:源端的句子，长度需要和attn中tgt大小一致
 
 
 用法：
-python draw_attn.py -attn_path $attn_path -save_dir $save_dir -souce_dir $source_dir -target_dir $target_dir
+python draw_attn.py -attn_path $attn_path -save_dir $save_dir -source_dir $source_dir -target_dir $target_dir
 
 -attn_path是attn文件的路径
 
