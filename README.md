@@ -22,3 +22,7 @@ python draw_attn.py -attn_path $attn_path -save_dir $save_dir -source_file $sour
 -target_file是目标端句子文件的路径
 
 -save_dir是存储的文件夹路径
+
+-plt_show是否在窗口输出attn图片，默认是输出，也可以设置为0，不输出
+
+-cbar：是否显示attn图片右侧的bar
