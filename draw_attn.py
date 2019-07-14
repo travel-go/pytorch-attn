@@ -14,10 +14,10 @@ import argparse
 
 def parser():
        parser = argparse.ArgumentParser(description="draw_attn_pic")
-       parser.add_argument("-attn_path",type=str, default="E:\contrastive-attn-all\\checkpoint41_attn_layer_0")
-       parser.add_argument("-save_dir",type=str, default="E:\contrastive-attn-all\\attn_pic\\")
-       parser.add_argument("-source_file",type=str, default="D:\leetcode\draw\draw_attn\source_sentence")
-       parser.add_argument("-target_file",type=str, default="D:\leetcode\draw\draw_attn\\target_sentence")
+       parser.add_argument("-attn_path",type=str, default="checkpoint41_attn_layer_0")
+       parser.add_argument("-save_dir",type=str, default="attn_pic")
+       parser.add_argument("-source_file",type=str, default="source_sentence")
+       parser.add_argument("-target_file",type=str, default="target_sentence")
        parser.add_argument("-num_sentence", type=int, default=1 )
        parser.add_argument("-isTensor",type=int ,default=1)
        parser.add_argument("-cbar", type=int, default=1)
@@ -87,7 +87,7 @@ def draw_attn_pic(args,attn_path,save_dir, source_filename, target_filename, num
         exit()
 
 def main(args):
-    draw_attn_pic(args, args.attn_path, args.save_dir, args.source_filename,args.target_filename,args.num_sentence)
+    draw_attn_pic(args, args.attn_path, args.save_dir, args.source_file,args.target_file,args.num_sentence)
 
 
 if __name__ == '__main__':
